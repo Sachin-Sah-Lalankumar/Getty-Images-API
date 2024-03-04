@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 1px;
+  margin: 20px 10px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#search-input {
+  width: 380px;
+  height: 40px;
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 20px 20px;
+  margin: 8px 8px;
+  position: relative;
+  display: inline-block;
+}
+#search {
+  width: 70px;
+  height: 40px;
+  font-size: 15px;
+  padding: 3px 3px;
+  border-radius: 20px 20px;
+  color: #fff;
+  background-color: green;
+}
+#search:hover {
+  background-color: rgb(18, 235, 112);
+  cursor: pointer;
+}
+
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.search-result {
+  width: 30%;
+  height: 200px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgb(0, 0, 0, 0.2);
+  justify-content: center;
+  padding: 4px 4px;
+}
+
+.search-result img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: opacity 0.2s ease-in-out;
+}
+.search-result img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.search-results a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 20px;
+  padding: 10px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+}
+.search-results a:hover {
+  color: blue;
+  cursor: pointer;
+}
+#show-more {
+  background-color: #008cba;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: none;
+}
+#show-more:hover {
+  color: rgb(222, 242, 242);
+  opacity: 0.8;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+  .search-result {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .search-result {
+    width: 100%;
+  }
+}
