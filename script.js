@@ -29,7 +29,7 @@ async function searchImages() {
     const image = document.createElement("img");
     image.src = result.urls.small;
     image.alt = result.alt_description;
-    image.style.display = "block"; // Ensure the image is a block element
+    image.style.display = "block";
     image.style.margin = "0 auto";
 
     const imagesLink = document.createElement("a");

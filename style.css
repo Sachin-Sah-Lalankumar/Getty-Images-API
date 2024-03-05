@@ -5,8 +5,8 @@
 }
 body,
 html {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 h1 {
   text-align: center;
@@ -20,16 +20,25 @@ form {
   align-items: center;
   margin-bottom: 50px;
 }
-#search-input {
+
+.search-bar {
   width: 380px;
   height: 40px;
   font-size: 15px;
-  padding: 20px;
+  padding: 10px 10px;
   border-radius: 20px 20px;
+  border: 1px solid black;
+  background-color: transparent;
   margin: 8px 8px;
-  position: relative;
-  display: inline-block;
+  /* position: relative; */
 }
+#search-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
 #search {
   width: 70px;
   height: 40px;
@@ -88,6 +97,11 @@ form {
   color: blue;
   cursor: pointer;
 }
+.button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 #show-more {
   background-color: #008cba;
   font-size: 18px;
@@ -97,6 +111,7 @@ form {
   cursor: pointer;
   padding: 10px 20px;
   display: none;
+  margin-block: 30px 30px;
 }
 #show-more:hover {
   color: rgb(222, 242, 242);
